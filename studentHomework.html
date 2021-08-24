@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашние задания</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/studentDiary.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <!-- Логотип, меню, иконка -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue px-5">
+        <a class="navbar-brand" href="#">
+            <img src="Images/user-pc-white64.png" class="card-img-top" alt="...">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="studentDiary.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="studentHomework.html">Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studentSettings.html">Settings</a>
+                </li>
+            </ul>
+            <form>
+                <img src="Images/av_64.png" class="nav-img" alt="...">
+            </form>
+        </div>
+    </nav>
+
+    <h1 class="text-center mt-3 mb-3 header-adapt">Домашние задания</h1>
+
+    <!-- colorMenu -->
+    <!-- Цвета, которые обозначают на какой стадии находятся домашние задания (текущее задание, на проверке, проверенное, просроченное задание) -->
+
+    <section class="colorMenuSection">
+        <div class="colorMenu">
+            <div>
+                <p class="p-item1-full">текущие задания - </p>
+                <span class="bg-greyLight"></span>
+                <p  class="p-item1">- текущие задания</p>
+            </div>
+            <div>
+                <p class="p-item2-full">проверенные задания - </p>
+                <span class="bg-green"></span>
+                <p class="p-item2">- проверенные задания</p>
+            </div>
+            <div>
+                <p  class="p-item3-full">задания на проверке - </p>
+                <span class="bg-greyBlue"></span>
+                <p class="p-item3">- задания на проверке</p>
+            </div>
+            <div>
+                <p  class="p-item4-full">просроченные задания - </p>
+                <span class="bg-red"></span>
+                <p class="p-item4">- просроченные задания</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 1 -->
+    <!-- Изучаемый предмет, домашние задания, в т.ч. текущие, выполненные, на проверке, просроченные -->
+
+    <section>
+
+        <h2 class="text-start ps-3 pb-2">JavaScript</h2>
+        <hr class="mx-3">
+
+        <form>
+
+            <div class="row gx-2 d-flex flex-wrap">
+                
+                <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="homework bg-greyLight">
+                        <h4>Loops</h4>
+                        <p>22/08/2021</p>
+                        <label for="formFileMultiple" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
+                </div>
+                <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="homework bg-greyBlue">
+                        <h4>Conditional statements</h4>
+                        <p>11/08/2021</p>
+                        <label for="formFileMultiple2" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFileMultiple2" multiple>
+                    </div>
+                </div>
+                <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="homework bg-greyBlue">
+                        <h4>Variables</h4>
+                        <p>23/07/2021</p>
+                        <label for="formFileMultiple3" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFileMultiple3" multiple>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </section>
+    
+    <!-- section 2 -->
+    
+    <section>
+
+        <h2 class="text-start ps-3 pb-2">HTML & CSS</h2>
+        <hr class="mx-3">
+        <div class="row gx-0">
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-red">
+                    <h4>Adaptive Layout</h4>
+                    <p>23/08/2021</p>
+                    <label for="formFileMultiple4" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple4" multiple>
+                </div>
+            </div>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-red">
+                    <h4>Grid Layout</h4>
+                    <p>19/08/2021</p>
+                    <label for="formFileMultiple5" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple5" multiple>
+                </div>
+            </div>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Flexbox<span class="badge bg-success">11</span></h4>
+                    <p>13/08/2021</p>
+                    <label for="formFileMultiple6" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple6" multiple>
+                </div>
+            </div>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Animations<span class="badge bg-success">10</span></h4>
+                    <p>06/08/2021</p>
+                    <label for="formFileMultiple7" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple7" multiple>
+                </div>
+            </div>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Forms<span class="badge bg-success">10</span></h4>
+                    <p>23/07/2021</p>
+                    <label for="formFileMultiple8" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple8" multiple>
+                </div>
+            </div>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Tables<span class="badge bg-success">12</span></h4>
+                    <p>17/07/2021</p>
+                    <label for="formFileMultiple9" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple9" multiple>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="JS/bootstrap.min.js"></script>
+</body>
+
+</html>
