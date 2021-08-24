@@ -196,7 +196,7 @@ form>input{
 /* медиазапросы */
 @media(max-width: 1320px){
     .text-adapt{
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 }
 @media(max-width: 991px){
@@ -238,6 +238,6 @@ form>input{
         font-size: 0.8em;
     }
     .text-adapt{
-        font-size: 1.3em;
+        font-size: 0.8em;
     }
 }
